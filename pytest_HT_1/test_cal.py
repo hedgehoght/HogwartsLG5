@@ -1,5 +1,6 @@
 import pytest
 import yaml
+from decimal import Decimal
 from pytest_HT_1.calculator import Calculator
 
 def open_file():
@@ -18,26 +19,28 @@ class TestCalc:
     def teardown(self):
         print("\n计算结束")
 
-    @pytest.mark.parametrize("a,b,expect",open_file()["add"],ids=open_file()["myids"])
+    @pytest.mark.parametrize("a,b,expect",open_file()["add"],ids=open_file()["addids"])
     # 加
     def test_add(self,a,b,expect):
         result = self.calc.add(a,b)
         assert result == expect
 
-    @pytest.mark.parametrize("a,b,expect",open_file()["sub"],ids=open_file()["myids"])
+    @pytest.mark.parametrize("a,b,expect",open_file()["sub"],ids=open_file()["subids"])
     # 减
     def test_sub(self, a, b, expect):
         result = self.calc.sub(a, b)
         assert result == expect
 
-    @pytest.mark.parametrize("a,b,expect",open_file()["mul"],ids=open_file()["myids"])
+    @pytest.mark.parametrize("a,b,expect",open_file()["mul"],ids=open_file()["mulids"])
     # 乘
     def test_mul(self, a, b, expect):
         result = self.calc.mul(a, b)
         assert result == expect
 
-    @pytest.mark.parametrize("a,b,expect",open_file()["div"],ids=open_file()["myids"])
+    @pytest.mark.parametrize("a,b,expect",open_file()["div"],ids=open_file()["divids"])
     # 除
     def test_div(self, a, b, expect):
         result = self.calc.div(a, b)
         assert result == expect
+
+

@@ -1,24 +1,57 @@
 add:
   - [3,3,6]
   - [-1,-2,-3]
+  - [1.2,2.3,3.5]
   - [1000,1000,2000]
+  - [qq,qq,qq]
+
+addids:
+  - "add-int"
+  - "add-minus"
+  - "add-point"
+  - "add-bigint"
+  - "add-other"
 
 sub:
   - [66,55,11]
   - [-9,-6,-3]
+  - [9.9,3,6.9]
   - [10000,1000,9000]
+  - [qq,qq,qq]
+
+subids:
+  - "sub-int"
+  - "sub-minus"
+  - "sub-point"
+  - "sub-bigint"
+  - "sun-other"
 
 mul:
   - [3,3,9]
   - [-1,-2,2]
+  - [2.0,3,6.0]
   - [100,100,10000]
+  - [ww,ww,ww]
+
+mulids:
+  - "mul-int"
+  - "mul-minus"
+  - "mul-point"
+  - "mul-bigint"
+  - "mul-other"
 
 div:
   - [33,3,11]
   - [-8,-2,4]
+  - [4.4,2,2.2]
   - [10000,100,100]
+  - [rr,rr,rr]
+  - [100,0,100]
 
-myids:
-  - "int"
-  - "minus"
-  - "bigint"
+divids:
+  - "div-int"
+  - "div-minus"
+  - "div-point"
+  - "div-bigint"
+  - "div-other"
+  - "div-zero"
