@@ -6,7 +6,8 @@
 
 import pytest
 import yaml
-from test_pytest_HT.calculator import Calculator
+
+from test_pytest.homework.calculator import Calculator
 
 def open_file():
     with open("./data.yml") as f:

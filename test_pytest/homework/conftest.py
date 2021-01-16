@@ -9,7 +9,7 @@ import os
 import pytest
 import yaml
 
-from test_pytest_HT.calculator import Calculator
+from test_pytest.homework.calculator import Calculator
 
 # 通过 os.path.dirname 获取当前文件所在目录的路径
 yaml_file_path = os.path.dirname(__file__) + "/data.yml"
@@ -38,27 +38,27 @@ def get_add_datas(request):
 
 @pytest.fixture(params=sub_datas, ids=sub_ids)
 def get_sub_datas(request):
-    print("开始计算")
+    print("\n开始计算")
     data = request.param
-    print(f"request.param的测试数据是：{data}")
+    print(f"\nrequest.param的测试数据是：{data}")
     yield data
-    print("结束计算")
+    print("\n结束计算")
 
 @pytest.fixture(params=mul_datas, ids=mul_ids)
 def get_mul_datas(request):
-    print("开始计算")
+    print("\n开始计算")
     data = request.param
-    print(f"request.param的测试数据是：{data}")
+    print(f"\nrequest.param的测试数据是：{data}")
     yield data
-    print("结束计算")
+    print("\n结束计算")
 
 @pytest.fixture(params=div_datas, ids=div_ids)
 def get_div_datas(request):
-    print("开始计算")
+    print("\n开始计算")
     data = request.param
-    print(f"request.param的测试数据是：{data}")
+    print(f"\nrequest.param的测试数据是：{data}")
     yield data
-    print("结束计算")
+    print("\n结束计算")
 
 @pytest.fixture(scope="module")
 def get_calc():
