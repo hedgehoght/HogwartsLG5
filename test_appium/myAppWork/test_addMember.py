@@ -37,7 +37,12 @@ class TestAddMenber():
         dizhi = "西二旗"
         # 进入添加成员页面
         self.driver.find_element(MobileBy.XPATH, "//*[@text='通讯录']").click()
-        self.driver.find_element(MobileBy.XPATH, "//*[@text='添加成员']").click()
+        # self.driver.find_element(MobileBy.XPATH, "//*[@text='添加成员']").click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,
+                                 'new UiScrollable(new UiSelector().'
+                                 'scrollable(true).instance(0)).'
+                                 'scrollIntoView(new UiSelector().'
+                                 'text("添加成员").instance(0));').click()
         self.driver.find_element(MobileBy.XPATH, "//*[@text='手动输入添加']").click()
         # 输入姓名
         # self.driver.find_element(MobileBy.XPATH, "//*[@text='//*[@text='必填']']").send_keys("name2")
