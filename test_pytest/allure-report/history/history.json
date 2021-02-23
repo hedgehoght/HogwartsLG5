@@ -1,0 +1,102 @@
+{
+  "710801e88132d8b5f862f0e42646995f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "16544c8d73e87340",
+      "status" : "broken",
+      "statusDetails" : "_pytest.fixtures.FixtureLookupError: ('get_calc', <FixtureRequest for <Function test_add[int]>>)",
+      "time" : {
+        "start" : 1610293008396,
+        "stop" : 1610293008396,
+        "duration" : 0
+      }
+    } ]
+  },
+  "76dc4a1486ada3a46106ab1492b58ac7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9d1a6b8d20af87cc",
+      "status" : "broken",
+      "statusDetails" : "_pytest.fixtures.FixtureLookupError: ('get_calc', <FixtureRequest for <Function test_add[float]>>)",
+      "time" : {
+        "start" : 1608991529286,
+        "stop" : 1608991529286,
+        "duration" : 0
+      }
+    } ]
+  },
+  "70fc6df4cad708b5d0fb46c7d58a26d1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "664711e69ef1310f",
+      "status" : "broken",
+      "statusDetails" : "_pytest.fixtures.FixtureLookupError: ('get_calc', <FixtureRequest for <Function test_add[minus]>>)",
+      "time" : {
+        "start" : 1610293008403,
+        "stop" : 1610293008403,
+        "duration" : 0
+      }
+    } ]
+  },
+  "58d2d73ea8b4de281c9d0010008c42ef" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "106d51d7a9732883",
+      "status" : "broken",
+      "statusDetails" : "_pytest.fixtures.FixtureLookupError: ('get_calc', <FixtureRequest for <Function test_add[except]>>)",
+      "time" : {
+        "start" : 1608991529288,
+        "stop" : 1608991529288,
+        "duration" : 0
+      }
+    } ]
+  },
+  "985e0ef55ec79c83e07d71449373fd04" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "821c19788a962476",
+      "status" : "broken",
+      "statusDetails" : "_pytest.fixtures.FixtureLookupError: ('get_calc', <FixtureRequest for <Function test_add[bigint]>>)",
+      "time" : {
+        "start" : 1610293008406,
+        "stop" : 1610293008406,
+        "duration" : 0
+      }
+    } ]
+  }
+}
